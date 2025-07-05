@@ -6,7 +6,7 @@
 /*   By: cress <cress@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/05 13:14:01 by cress             #+#    #+#             */
-/*   Updated: 2025/07/05 20:35:43 by cress            ###   ########.fr       */
+/*   Updated: 2025/07/05 21:32:32 by cress            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	error_no_digit(char **s_a)
 				j++;
 			if (ft_isdigit(s_a[i][j]) == 1)
 				j++;
-			else
+			else 
 			{
 				write (2, "ERRORd\n", 7);
 				free_mem(s_a);
@@ -61,9 +61,9 @@ int	error_dup(char	**s_a)
 	cmp_ok = 0;
 	while (s_a[cmp_ok])
 		cmp_ok++;
-	j = i + 1;
 	while (s_a[i])
 	{
+		j = i + 1;
 		while (s_a[j])
 		{
 			if (ft_strncmp(s_a[i], s_a[j], ft_strlen(s_a[j]) == 0))
