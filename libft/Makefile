@@ -6,7 +6,7 @@
 #    By: cress <cress@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/19 16:52:40 by amonteag          #+#    #+#              #
-#    Updated: 2025/07/04 20:30:56 by cress            ###   ########.fr        #
+#    Updated: 2025/07/08 18:50:48 by cress            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ ft_isalnum.c ft_isprint.c ft_memcpy.c ft_putendl_fd.c ft_strchr.c ft_strlcat.c f
 ft_fmt.c ft_printf.c ft_putnbr_hex_fd.c ft_putnbr_xxx_fd.c ft_putunsig_fd.c ft_putptr_hex_fd.c ft_putptr_fd.c\
 ft_lstnew.c ft_lstadd_front.c ft_lstsize.c\
 ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c\
-ft_lstclear.c ft_lstiter.c ft_lstmap.c
+ft_lstclear.c ft_lstiter.c ft_lstmap.c  ft_strcmp.c
 
 OBJ = $(SRC:.c=.o)
 

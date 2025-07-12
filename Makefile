@@ -6,7 +6,7 @@
 #    By: cress <cress@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/04 19:47:37 by cress             #+#    #+#              #
-#    Updated: 2025/07/05 17:56:46 by cress            ###   ########.fr        #
+#    Updated: 2025/07/08 22:20:14 by cress            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ LIBFT_DIR = ./libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
 NAME_S = push_swap
-SRC_S = push_swap.c push_swap_init.c error_handler.c
+SRC_S = push_swap.c push_swap_init.c error_handler.c error_handler_2.c
 OBJ_S = $(SRC_S:.c=.o)
 
 all: $(NAME_S)
@@ -33,7 +33,7 @@ $(LIBFT):
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(NAME_C) $(NAME_S)$(OBJ_S)
+	$(RM) $(NAME_C) $(NAME_S) $(OBJ_S)
 	make -C $(LIBFT_DIR) clean
 ##@echo "Archivos printf .o eliminados"
 
